@@ -29,6 +29,7 @@ function runSolutions(sourceCount) {
     for (let i = 0; i < sourceCount; i++) {
       syncLogSources.push(new LogSource());
     }
+
     try {
       require("./solution/sync-sorted-merge")(syncLogSources, new Printer());
       resolve();
@@ -62,4 +63,5 @@ function runSolutions(sourceCount) {
 }
 
 // Adjust this input to see how your solutions perform under various loads.
-runSolutions(100);
+// runSolutios(100);
+runSolutions(3);
